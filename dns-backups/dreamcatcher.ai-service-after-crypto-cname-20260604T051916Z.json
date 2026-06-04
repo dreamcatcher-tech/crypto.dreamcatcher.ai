@@ -1,0 +1,31 @@
+{
+  "github_pages": {
+    "build_type": "workflow",
+    "cname": "crypto.dreamcatcher.ai",
+    "html_url": "http://crypto.dreamcatcher.ai/",
+    "https_certificate": null,
+    "https_enforced": false,
+    "status": null
+  },
+  "timestamp_utc": "20260604T051916Z",
+  "urls": {
+    "http://crypto.dreamcatcher.ai/": {
+      "bytes_sampled": 2247,
+      "contains_crypto_marker": true,
+      "content_type": "text/html; charset=utf-8",
+      "status": 200
+    },
+    "http://crypto.dreamcatcher.ai/slides/decks/crypto-exchange-recomposed.md": {
+      "bytes_sampled": 1514,
+      "contains_crypto_marker": true,
+      "content_type": "text/markdown; charset=utf-8",
+      "status": 200
+    },
+    "http://crypto.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/crypto-exchange-recomposed.md": {
+      "bytes_sampled": 7068,
+      "contains_crypto_marker": false,
+      "content_type": "text/html; charset=utf-8",
+      "status": 200
+    }
+  }
+}
