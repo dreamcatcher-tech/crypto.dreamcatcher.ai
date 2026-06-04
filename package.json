@@ -1,0 +1,11 @@
+{
+  "name": "crypto-dreamcatcher-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "lint": "node scripts/check-site.mjs",
+    "serve": "python3 -m http.server 3101 --directory dist"
+  }
+}

@@ -1,0 +1,12 @@
+import { cp, mkdir, rm, copyFile, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+await import('./check-site.mjs');
+if (process.exitCode) process.exit(process.exitCode);
+const root = new URL('..', import.meta.url).pathname;
+const dist = join(root, 'dist');
+await rm(dist, { recursive: true, force: true });
+await mkdir(dist, { recursive: true });
+for (const file of ['index.html', 'styles.css', 'CNAME']) await copyFile(join(root, file), join(dist, file));
+await writeFile(join(dist, '.nojekyll'), '');
+await cp(join(root, 'slides'), join(dist, 'slides'), { recursive: true });
+console.log('✓ Built static site into dist/');
